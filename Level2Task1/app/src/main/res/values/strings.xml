@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MadLevel2Task1</string>
+    <string name="image">image</string>
+    <string name="placeholder_text">Placeholder Text</string>
+</resources>

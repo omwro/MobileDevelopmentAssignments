@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Mad Level 4 Task 2</string>
+    <string name="welcome">Welcome</string>
+    <string name="instructions_text">Instructions: Select rock, paper or scissors to play</string>
+    <string name="your_all_time_statistics">Your all time statistics</string>
+    <string name="win">Win: %d</string>
+    <string name="loose">Loose: %d</string>
+    <string name="draw">Draw: %d</string>
+    <string name="vs">V.S.</string>
+    <string name="computer">Computer</string>
+    <string name="you">You</string>
+    <string name="placeholder_text">Placeholder Text</string>
+    <string name="pc_result_img">pc result img</string>
+    <string name="you_result_img">You result img</string>
+    <string name="you_won">You Won!</string>
+    <string name="you_lost">You Lost!</string>
+    <string name="you_draw">A Draw!</string>
+    <string name="internal_error">Internal error</string>
+    <string name="history">History</string>
+    <string name="history_title">Your Game History</string>
+    <string name="rock_image">rock image</string>
+    <string name="paper_image">paper image</string>
+    <string name="scissor_image">scissor image</string>
+</resources>

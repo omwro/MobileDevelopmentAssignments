@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/welcome"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/instructions_text" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@android:color/holo_blue_light" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/your_all_time_statistics" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvStatWin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:text="@string/win" />
+
+            <TextView
+                android:id="@+id/tvStatDraw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:text="@string/draw" />
+
+            <TextView
+                android:id="@+id/tvStatLost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:text="@string/loose" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+        <TextView
+            android:id="@+id/tvResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:gravity="center" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imgPcResult"
+                android:layout_width="0dp"
+                android:layout_height="64dp"
+                android:layout_weight="1"
+                android:background="@android:color/holo_blue_light"
+                android:src="@drawable/rock" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="64dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/vs"
+                android:textColor="@android:color/holo_blue_light"
+                android:textSize="36sp" />
+
+            <ImageView
+                android:id="@+id/imgYouResult"
+                android:layout_width="0dp"
+                android:layout_height="64dp"
+                android:layout_weight="1"
+                android:background="@android:color/holo_blue_light"
+                android:src="@drawable/rock" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="20sp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/computer" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="20sp"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="20sp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/you" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/btnRock"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:background="@android:color/holo_blue_light"
+            android:src="@drawable/rock"
+            android:contentDescription="@string/rock_image" />
+
+        <ImageView
+            android:id="@+id/btnPaper"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_weight="1"
+            android:background="@android:color/holo_blue_light"
+            android:src="@drawable/paper"
+            android:contentDescription="@string/paper_image" />
+
+        <ImageView
+            android:id="@+id/btnScissor"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:background="@android:color/holo_blue_light"
+            android:src="@drawable/scissors"
+            android:contentDescription="@string/scissor_image" />
+
+<!--        <Button-->
+<!--            android:id="@+id/btnRock"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="64dp"-->
+<!--            android:layout_margin="4dp"-->
+<!--            android:layout_weight="1"-->
+<!--            android:background="@drawable/rock"-->
+<!--            android:backgroundTint="@android:color/holo_blue_light"-->
+<!--            android:backgroundTintMode="add" />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/btnPaper"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="64dp"-->
+<!--            android:layout_margin="4dp"-->
+<!--            android:layout_weight="1"-->
+<!--            android:background="@drawable/paper"-->
+<!--            android:backgroundTint="@android:color/holo_blue_light"-->
+<!--            android:backgroundTintMode="add" />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/btnScissor"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="64dp"-->
+<!--            android:layout_margin="4dp"-->
+<!--            android:layout_weight="1"-->
+<!--            android:background="@drawable/scissors"-->
+<!--            android:backgroundTint="@android:color/holo_blue_light"-->
+<!--            android:backgroundTintMode="add" />-->
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
